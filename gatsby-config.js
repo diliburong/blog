@@ -2,13 +2,22 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-theme-blog`,
-      options: {},
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // point!
+            options: {
+              //...
+            }
+          }
+        ]
+      },
     },
   ],
   // Customize your site metadata:
   siteMetadata: {
     title: `Stutter`,
-    author: `My Name`,
+    author: `diliburong`,
     description: `My site description...`,
     social: [
       {

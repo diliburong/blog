@@ -13,6 +13,13 @@ module.exports = {
         ]
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-123575007-2",
+      },
+    },
   ],
   // Customize your site metadata:
   siteMetadata: {
